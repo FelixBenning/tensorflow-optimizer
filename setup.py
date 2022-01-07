@@ -16,6 +16,9 @@ setup(
     install_requires=[
         "tensorflow~=2.5",
     ],
+    extras_require = {
+        "test": [ "pytest" ]
+    },
     entry_points="""
         [tensorflow.optimizers]
         my_optimizer = my_optimizer:MyOptimizer
